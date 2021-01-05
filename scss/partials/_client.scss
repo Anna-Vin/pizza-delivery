@@ -1,0 +1,75 @@
+.client {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  background: white;
+  border: 1px solid #8aa825;
+  box-shadow: 0px 0px 25px -5px rgba(139, 170, 37, 1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: url(../img/personal-info.png) center/cover no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -40px;
+      display: none;
+
+      @include screen(sm) {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    input {
+      margin-bottom: 10px;
+      min-width: 200px;
+      max-width: 50%;
+      padding: 5px;
+      outline: 0;
+      border: 1px solid #8aa825;
+      border-radius: 5px;
+      font-family: inherit;
+
+      &:focus {
+        @include screen(lg) {
+          box-shadow: 0px 0px 5px 3px rgba(139, 170, 37, 1);
+        }
+      }
+    }
+  }
+
+  img {
+    display: none;
+    max-width: 270px;
+
+    @include screen(lg) {
+      display: block;
+    }
+  }
+}

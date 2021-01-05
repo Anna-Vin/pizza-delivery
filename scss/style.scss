@@ -1,0 +1,17 @@
+@import "helpers/mixins";
+@import "helpers/vars";
+
+@import "base/normalize";
+@import "base/bootstap-grid";
+@import "base/fonts";
+@import "base/base";
+
+@import "partials/header";
+@import "partials/main";
+@import "partials/modal";
+@import "partials/sorting";
+@import "partials/constructor";
+@import "partials/cart";
+@import "partials/delivery";
+@import "partials/client";
+@import "partials/order";

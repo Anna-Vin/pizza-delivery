@@ -1,0 +1,122 @@
+.header {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #1c2534;
+  box-shadow: 7px 22px 30px -14px rgba(0,0,0,0.19);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen(md) {
+      align-items: center;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    &-img {
+      display: none;     
+  
+      @include screen(sm) {
+        display: block;
+        max-width: 45px;
+      }
+
+      @include screen(md) {
+        max-width: 55px;
+        margin-right: 20px;
+      }
+  
+      @include screen(lg) {
+        max-width: 65px;
+      }
+    }
+  }
+
+
+  .credits {
+    display: none;
+    text-transform: uppercase;
+    color: white;
+    font: 30px "Asap Condensed", sans-serif;
+
+    @include screen(lg) {
+      display: block;
+    }
+
+  }
+  .form-wrapper {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+
+    @include screen(md) {
+      width: 300px;
+    }
+
+    .cart {
+      position: relative;
+      width: 35px;
+      align-self: center;
+      transform: translate(75%, -50%);
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.75;
+      }
+
+      &-count{
+        position: absolute;
+        top: 15px;
+        left: -10px;
+        width: 22px;
+        height: 22px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+        background: #8aa825;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  input,
+  select {
+    width: 80%;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-family: inherit;
+
+    &:focus {
+      @include screen(lg) {
+        box-shadow: 0px 0px 5px 3px rgba(139, 170, 37, 1);
+      }
+    }
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  select {
+    appearance: none;
+    background-image: url(../img/arrow-down.png);
+    background-position: 96% center;
+    background-repeat: no-repeat;
+  }
+
+
+}
+
+

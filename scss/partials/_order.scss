@@ -1,0 +1,69 @@
+.order {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #edf7f2;
+  border: 1px solid #8aa825;
+  box-shadow: 0px 0px 25px -5px rgba(139, 170, 37, 1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &-info {
+      text-align: start;
+      max-width: 200px;
+
+      @include screen(lg) {
+        max-width: 280px;
+      }
+    }
+
+    .pizzas {
+      padding: 20px;
+      max-width: 200px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      background: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .ordered-pizza {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .name {
+          color: #f9ae21;
+        }
+
+        img {
+          width: 40px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  img {
+    max-width: 100px;
+  }
+}

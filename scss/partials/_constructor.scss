@@ -1,0 +1,139 @@
+.constructor_label {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .title {
+    display: block;
+    width: fit-content;
+    margin-right: 10px;
+  }
+
+
+  #btnCreate1 {
+    padding: 15px 20px;
+    background: #f9ae21;
+    color: white;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 50px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: darken(#f9ae21, 10%);
+    }
+  }
+}
+
+
+.constructor {
+  background: url(../img/modal-bg.jpg) center/cover no-repeat;
+  padding: 50px 0;
+  box-shadow: 0px 0px 50px 14px rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+}
+
+.constructor_inner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 30px 34px rgba(0, 0, 0, 0.19);
+
+  @include screen(md) {
+    width: 70%;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    #imgLabel {
+      display: block;
+      padding: 10px;
+      background: #8aa825;
+      color: white;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: darken(#8aa825, 15%);
+      
+      }
+    }
+
+    input {
+      width: 200px;
+      margin-top: 10px;
+      padding: 5px;
+      outline: 0;
+      border: 1px solid #8aa825;
+      border-radius: 5px;
+      font-family: inherit;
+  
+      &:focus {
+        @include screen(lg) {
+          box-shadow: 0px 0px 5px 3px rgba(139, 170, 37, 1);
+        }
+      }
+    }
+  
+
+    input[type="file"] {
+      display: none;
+    }
+
+    img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .compositions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    label {
+      margin: 10px;
+    }
+  }
+
+  #btnCreate {
+    margin-top: 10px;
+    padding: 15px 20px;
+    background: #f9ae21;
+    color: white;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: darken(#f9ae21, 15%);
+    }
+  }
+}

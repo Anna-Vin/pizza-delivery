@@ -1,0 +1,103 @@
+.sort {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &_price,
+  &_calories {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    box-shadow: 7px 18px 40px -4px rgba(0,0,0,0.22);
+    border-radius: 3px;
+    
+  }
+
+  &_price {
+    background: #212838 url(../img/sort-bg.jpg);
+    margin-bottom: 20px;
+
+    @include screen(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &_calories {
+    background: #212838 url(../img/sort-bg2.jpg) center/cover;
+  }
+
+  &_title {
+    margin-top: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: #FFF 0px 0px 10px, #902903 0px 0px 20px, 0px 5px 2px rgba(181,151,29,0);
+  }
+
+  &-input {
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-family: inherit;
+
+
+    &:focus {
+      @include screen(lg) {
+        box-shadow: 0px 0px 5px 3px rgba(139, 170, 37, 1);
+      }
+    }
+  }
+
+  .label {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 14px;
+      left: -180px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background: url(../img/min.png) center/cover no-repeat;
+      z-index: 1000;
+
+      @include screen(sm) {
+        display: block;
+      }
+    }
+
+    &-max {
+      &::before {
+        background: url(../img/max.png) center/cover no-repeat;;
+      }
+    }
+  }
+
+  &_submit,
+  #btnCreate1 {
+    margin-top: 10px;
+    padding: 15px 20px;
+    background: #f9ae21;
+    color: white;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: darken(#f9ae21, 15%);
+    }
+  }
+}

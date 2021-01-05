@@ -1,0 +1,154 @@
+.cart__content {
+  background: white;
+  border: 1px solid #8aa825;
+  box-shadow: 0px 0px 25px -5px rgba(139, 170, 37, 1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+
+  .btn {
+    font-size: 20px;
+    vertical-align: center;
+    cursor: pointer;
+    background: #8aa825;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    transition: 0.3s;
+
+    &:hover {
+      background: darken(#8aa825, 15%);
+    }
+  }
+
+  .count {
+    padding: 4px 0;
+    width: 25px;
+    text-align: center;
+  }
+
+  .remove {
+    font-size: 50px;
+    font-weight: bold;
+    background: transparent;
+    margin-right: 10px;
+    color: #ae4721;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    transform: translateY(-3px);
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-3px) scale(1.15);
+    }
+  }
+
+  .ordered-pizza {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #8aa825;
+
+    .pizza-pos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    
+    
+      .pizza-cart-img {
+        width: 50px;
+        margin-right: 10px;
+      }
+     }
+  }
+
+  
+
+
+  .cart-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+
+   .cart-btn {
+    margin-bottom: 20px;
+    width: 90%;
+    border: 0;
+    outline: 0;
+    background: #1c2534;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #8aa825 0px 0px 15px;
+
+    @include screen(sm) {
+      width: 40%;
+    }
+
+    &:hover {
+      background: lighten(#1c2534, 15%);
+    }
+  }
+} 
+
+.promo {
+  margin: 40px auto;
+  padding: 40px;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #f9ae21;
+  // box-shadow: 0px 0px 25px -5px rgba(139, 170, 37, 1);
+  max-width: 800px;
+  
+  
+
+  label {
+    position: relative;
+    color: #ae4721;
+    margin-right: 10px;
+    text-shadow: 0 0 10px #f9ae21, 2px 2px 2px rgba(206,89,55,0);
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: url(../img/discount.png) center/cover no-repeat;
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+    }
+  }
+
+  input {
+    margin-top: 20px;
+    width: 200px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid #8aa825;
+    border-radius: 5px;
+    font-family: inherit;
+
+    &:focus {
+      @include screen(lg) {
+        box-shadow: 0px 0px 5px 3px rgba(139, 170, 37, 1);
+      }
+    }
+  }
+}
