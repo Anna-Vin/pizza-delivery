@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Client Info</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="logo-img">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="credits">
+          <span>Pizza Task</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main container">
+      <div class="client">
+          <h2 class="section_title">Введите данные для заказа</h2>
+        <div class="client__content">
+            <label for="name">Имя*</label>
+            <input type="text" id="name">
+            <label for="surname">Фамилия*</label>
+            <input type="text" id="surname">
+            <label for="phone">Телефон*</label>
+            <input type="tel" id="phone">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <img src="img/client.gif" alt="">
+        <div class="delivery__buttons">
+            <button  class="delivery-btn" id="btnPrevC">Назад</button>
+            <button class="delivery-btn" id="btnNextC">Оформить заказ</button>
+            </div>
+      </div>
+    </main>
+    <script src="js/client.js"></script>
+</body>
+
+</html>

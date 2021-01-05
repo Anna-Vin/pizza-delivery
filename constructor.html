@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Create your own pizza</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="logo-img">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="credits">
+          <span>Pizza Task</span>
+        </div>
+      </div>
+      <button class="delivery-btn" id="toStart">На главную</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="constructor">
+      <div class="constructor_inner">
+        <div class="image">
+          <img id="imageView" src="img/custom-pizza.png" alt="pizza">
+          <label for="addImg" id="imgLabel">Выберите изображение</label>
+          <input type="file" placeholder="Add Image" id="addImg">
+          <label for="addTitle">Придумайте имя для пиццы</label>
+          <input type="text" placeholder="Название пиццы" id="addTitle">
+        </div>
+        <h2>Выберите ингредиенты: </h2><br>
+        <div class="compositions">  
+        </div>
+        <div class="info">
+          <h1>Price</h1>
+          <p>Caloricity</p>
+        </div>
+        <button id="btnCreate">Создать пиццу</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/listOfPizzasAndCompozitions.js"></script>
+  <script src="js/constructor.js"></script>
+</body>
+
+</html>

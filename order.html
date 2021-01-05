@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="logo-img">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="credits">
+          <span>Pizza Task</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main container">
+    <div class="order">
+        <h2 class="section_title">Ваш заказ принят!</h2>
+        <img src="img/check.gif" alt="">
+        <h3 class="details">Детали заказа:</h3>
+        <div class="order__content">
+          <div class="pizzas"></div>
+          <div class="order__content-info">
+            <span id="spanId">Id</span><br>
+            <span id="spanFullName">Full Name</span><br>
+            <span id="spanPhone">Phone</span><br>
+            <span id="spanEmail">Email</span><br>
+            <span id="spanAddress">Address</span><br>
+            <span id="spanDelivery">Type of Delivery</span><br>
+            <p id="pCount">Count</p>
+          </div>
+        </div>
+        <button id="toMain" class="delivery-btn">Вернуться на главную</button>
+    </div>
+  </main>
+  <script src="js/order.js"></script>
+</body>
+</html>
